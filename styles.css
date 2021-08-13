@@ -2,4 +2,247 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.3fr;
+  grid-template-rows: 1fr;
+}
+
+header {
+  border-right: 1px solid gainsboro;
+}
+
+.logo_icon {
+  width: 100px;
+}
+
+.tweet_button {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  border: none;
+  background: transparent;
+  background-color: #39a2db;
+  color: white;
+  cursor: pointer;
+}
+
+.top_tweet_icon {
+  width: 50px;
+}
+
+.header_div1 {
+  display: flex;
+  margin-left: 70px;
+  /* padding: 10px; */
+  cursor: pointer;
+}
+
+.header_div2 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 20%;
+  padding: 10px;
+}
+
+.header_div2 ul {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header_div2 ul:hover {
+  background-color: #e6ecf0;
+  border-radius: 30px;
+  color: #39a2db;
+}
+
+.active_home {
+  color: #39a2db;
+}
+
+.header_div3 {
+  width: 70%;
+  padding: 10px;
+  margin-left: 20%;
+  margin-top: 40px;
+}
+
+.header_div3:hover {
+  color: #39a2db;
+  background-color: #e8f0f2;
+  border-radius: 30px;
+}
+
+i {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.login_div {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.login_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed {
+  overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.main_div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-bottom: 01px solid gainsboro;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.main_div2 {
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tweet_main_feed {
+  display: flex;
+}
+
+.display_pic {
+  width: 45px;
+  cursor: pointer;
+}
+
+.tweet_main_feed input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.tweet_btn_feed {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  background: #39a2db;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  margin-left: 85%;
+}
+
+.main_div3 {
+  display: flex;
+  justify-content: center;
+}
+
+.main_div3 blockquote {
+  width: 100%;
+}
+
+.aside_main {
+  border-left: 1px solid gainsboro;
+  overflow-y: scroll;
+}
+
+.aside_div1 {
+  display: flex;
+  height: 11%;
+  padding-top: 16px;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#search_id {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin: 0 10%;
+  background-color: #e8f0f2;
+}
+
+#search_id::placeholder {
+  padding-left: 50px;
+  font-size: 1.2em;
+}
+
+.aside_div2 {
+  width: 80%;
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #e8f0f2;
+}
+
+.aside_div2 blockquote {
+  width: 100%;
+  flex: 1;
+}
+
+.aside_div3 {
+  height: 8%;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px 30px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gainsboro;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: sticky;
+  bottom: 0;
+  background: #e8f0f2;
+}
+
+.aside_div3 span {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.message_text {
+  cursor: pointer;
+}
+
+.message_icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
 }
