@@ -14,6 +14,8 @@ body {
   grid-template-rows: 1fr;
 }
 
+/* Header section CSS styling */
+
 header {
   border-right: 1px solid gainsboro;
 }
@@ -44,7 +46,6 @@ header {
 .header_div1 {
   display: flex;
   margin-left: 70px;
-  /* padding: 10px; */
   cursor: pointer;
 }
 
@@ -101,13 +102,7 @@ i {
   flex-direction: column;
 }
 
-.feed {
-  overflow-y: scroll;
-}
-
-.feed::-webkit-scrollbar {
-  display: none;
-}
+/* Feed Main section CSS styling */
 
 .main_div1 {
   display: flex;
@@ -125,6 +120,23 @@ i {
   display: flex;
   flex-direction: column;
   padding: 10px;
+}
+
+.main_div3 {
+  display: flex;
+  justify-content: center;
+}
+
+.main_div3 blockquote {
+  width: 100%;
+}
+
+.feed {
+  overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
 }
 
 .tweet_main_feed {
@@ -159,14 +171,7 @@ i {
   margin-left: 85%;
 }
 
-.main_div3 {
-  display: flex;
-  justify-content: center;
-}
-
-.main_div3 blockquote {
-  width: 100%;
-}
+/* Aside section CSS styling */
 
 .aside_main {
   border-left: 1px solid gainsboro;
